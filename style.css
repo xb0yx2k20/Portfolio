@@ -6,11 +6,19 @@ body {
   background-color: rgb(224, 224, 224);
 }
 
+.header_logo {
+  border-radius: 50%;
+  position: relative;
+}
+.header_logo img{
+    height: 50px;
 
+}
 
 header {
+
+  text-align: center;
   position: sticky;
-  margin-top: 0px;
   top: 8px;
   width: auto;
   height: 50px;
@@ -20,20 +28,34 @@ header {
   font-family: Arial, Helvetica, sans-serif;
 
 }
-
-ul {
-  margin-top: 0;
+.header_inner { 
+  height: inherit;
+  width: inherit;
+  margin: auto;
+  display: flex;
+  align-items: center;
 }
-nav {
-  text-align: center;
+.header_left {
+  width: 25%;
+  
 
 }
-li {
-  display: inline; /* Отображать как строчный элемент */
+.header_right {
+  width: 25%;
 
+  
+}
+.header_menu {
+  width: 50%;
+  
+}
+
+a {
+  display: inline; 
   margin: 0 28px;
+  
   font-size: 14px;
-  line-height: 19px;
+
 }
 
 .underline-one {
