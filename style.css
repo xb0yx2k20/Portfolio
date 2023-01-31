@@ -86,37 +86,18 @@ a {
    height: 1.5px; /* Высота линии */
    background-color: #00bfff; /* Цвет подчеркивания при появлении линии*/
    transition: width 0.5s;  /* Время эффекта */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   .anm {
-  background: linear-gradient(
-     to right, #daf104, 
-     #f87000, #fcb045);
-  background-size: 400% 400%;
-  animation: animate-background 10s infinite ease-in-out;
-}
-
-@keyframes animate-background {
-  0% {
-    background-position: 0 50%;
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
