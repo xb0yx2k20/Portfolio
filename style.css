@@ -1,9 +1,22 @@
+a{
+  text-decoration: none;
+}
+
 body {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
   max-width: 1500px;
   background-color: rgb(224, 224, 224);
+}
+
+.logo {
+  pointer-events: none;
+  float: left;
+  font-size: 30px;
+  font-family: 'Cormorant SC', serif;
+  color: #00bfff;
+
 }
 
 .header_logo {
@@ -15,8 +28,13 @@ body {
 
 }
 
-header {
 
+ 
+.header_hidden {
+  transform: translateY(calc(-100% - 8px));
+}
+
+.header { 
   text-align: center;
   position: sticky;
   top: 8px;
@@ -25,15 +43,11 @@ header {
   border-radius: 50px;
   background-color: white;
   box-shadow: 0px 0px 10px white;
-  font-family: Arial, Helvetica, sans-serif;
 
-}
-.header_inner { 
-  height: inherit;
-  width: inherit;
   margin: auto;
   display: flex;
   align-items: center;
+  transition: 0.5s;
 }
 .header_left {
   width: 25%;
@@ -41,12 +55,11 @@ header {
 
 }
 .header_right {
-  width: 25%;
-
-  
+  width: 25%;  
 }
 .header_menu {
   width: 50%;
+  font-family: Arial, Helvetica, sans-serif;
   
 }
 
@@ -59,21 +72,21 @@ a {
 }
 
 .underline-one {
- color: #00bfff; /* Цвет обычной ссылки */
-   position: relative;
-   cursor: pointer;
-   text-decoration: none; /* Убираем подчеркивание */
+  color: #00bfff; /* Цвет обычной ссылки */
+  position: relative;
+  cursor: pointer;
+  text-decoration: none; /* Убираем подчеркивание */
 }
 .underline-one:after {
- content: "";
-   display: block;
-   position: absolute;
-   right: 0;
-   bottom: -3px;
-   width: 0;
-   height: 1.5px; /* Высота линии */
-   background-color: #00bfff; /* Цвет подчеркивания при исчезании линии*/
-   transition: width 0.5s; /* Время эффекта */
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1.5px; /* Высота линии */
+  background-color: #00bfff; /* Цвет подчеркивания при исчезании линии*/
+  transition: width 0.5s; /* Время эффекта */
 }
 
 .underline-one:hover:after {
@@ -87,11 +100,7 @@ a {
    background-color: #00bfff; /* Цвет подчеркивания при появлении линии*/
    transition: width 0.5s;  /* Время эффекта */
   }
-
-
-
-
-
+ 
 
 
 
